@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C976601-7658-4915-8417-E342C90BEA95}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Community.BLL</RootNamespace>
+    <AssemblyName>Community.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleBLL.cs" />
+    <Compile Include="ArticleTypeBLL.cs" />
+    <Compile Include="AssistConstraintBLL.cs" />
+    <Compile Include="BannerImgBLL.cs" />
+    <Compile Include="BookBLL.cs" />
+    <Compile Include="BookChapterBLL.cs" />
+    <Compile Include="BookTypeBLL.cs" />
+    <Compile Include="ChannelBLL.cs" />
+    <Compile Include="CommentBLL.cs" />
+    <Compile Include="CourseBLL.cs" />
+    <Compile Include="CourseMmsBLL.cs" />
+    <Compile Include="CourseStudyRecordBLL.cs" />
+    <Compile Include="DicTypeBLL.cs" />
+    <Compile Include="EduClassBLL.cs" />
+    <Compile Include="EduMajorBLL.cs" />
+    <Compile Include="EduSchoolBLL.cs" />
+    <Compile Include="ExamBLL.cs" />
+    <Compile Include="ExamCourseBLL.cs" />
+    <Compile Include="ExamPaperBLL.cs" />
+    <Compile Include="ExamRecordBLL.cs" />
+    <Compile Include="ExamTypeBLL.cs" />
+    <Compile Include="ExamUserBLL.cs" />
+    <Compile Include="FriendLinkBLL.cs" />
+    <Compile Include="GiftBLL.cs" />
+    <Compile Include="GiftRecordBLL.cs" />
+    <Compile Include="GiftTypeBLL.cs" />
+    <Compile Include="LearnExperienceBLL.cs" />
+    <Compile Include="PaperBLL.cs" />
+    <Compile Include="PaperRecordBLL.cs" />
+    <Compile Include="PaperTypeBLL.cs" />
+    <Compile Include="PlatformBLL.cs" />
+    <Compile Include="ProductionBLL.cs" />
+    <Compile Include="ProductionTypeBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushBLL.cs" />
+    <Compile Include="SysEventBLL.cs" />
+    <Compile Include="SysModuleBLL.cs" />
+    <Compile Include="SysRoleBLL.cs" />
+    <Compile Include="SysRolePermissionBLL.cs" />
+    <Compile Include="SysUserRoleBLL.cs" />
+    <Compile Include="ThemeBaseBLL.cs" />
+    <Compile Include="ThemeBaseItemBLL.cs" />
+    <Compile Include="ThemeBLL.cs" />
+    <Compile Include="ThemeItemBLL.cs" />
+    <Compile Include="ThemeRecordBLL.cs" />
+    <Compile Include="ThemeTypeBLL.cs" />
+    <Compile Include="UserAssistBLL.cs" />
+    <Compile Include="UserGroupBLL.cs" />
+    <Compile Include="UserRecordBLL.cs" />
+    <Compile Include="UsersBLL.cs" />
+    <Compile Include="VisitLogBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Community.Common\Community.Common.csproj">
+      <Project>{be56dc57-067d-4638-82a5-9d915048092b}</Project>
+      <Name>Community.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Community.DAL\Community.DAL.csproj">
+      <Project>{f6e6ee3e-2a94-4a27-bba3-3c4d904c6895}</Project>
+      <Name>Community.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Community.Model\Community.Model.csproj">
+      <Project>{88d81d90-dee8-4491-ab19-fd23bb1ddfbe}</Project>
+      <Name>Community.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
